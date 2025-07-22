@@ -29,8 +29,8 @@ rect.createRectangle();
 rect.perimeterRectangle()
 console.log("Diện tích hình chữ nhật: "+rect.areaRectangle())
 console.log("Chu vi hình chữ nhật: "+rect.perimeterRectangle())
-rect.createRectangle(10,10,"blue", false);
-rect.createRectangle(20,20,"green", false);
+rect.createRectangle(10,10,"blue", true);
+rect.createRectangle(20,20,"green", true);
 let rect1 = new Rectangle(30,70);
-rect1.createRectangle(200,20,"red", false);
+rect1.createRectangle(200,20,"red", true);
 
