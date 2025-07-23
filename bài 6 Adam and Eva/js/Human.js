@@ -23,13 +23,15 @@ class Human{
     say(saying){
         console.log(`${this._name} : ${saying}`);
     }
-    isMale(){}
+    isMale(){
+        return this._gender === "Male";
+    }
     eat(Apple){
-        if(Apple.getWeight() < 0){
-            return
+        if(Apple.getWeight() <= 0){
+            return;
         }else {
             this._weight++;
-            Apple.decreaseWeight()
+            Apple.decreaseWeight();
         }
     }
     checkApple(Apple){
