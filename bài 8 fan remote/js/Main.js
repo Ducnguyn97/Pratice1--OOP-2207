@@ -1,0 +1,12 @@
+let fan = new ElectricFan();
+let remoteFan = new RemoteControl();
+remoteFan.ConnectToFan(fan);
+fan.checkStatus();
+remoteFan.RemoteTurnOn();
+fan.checkStatus();
+fan.setSpeed(1);
+remoteFan.pressSpeedUp();
+remoteFan.pressSpeedUp();
+remoteFan.RemoteTurnOff();
+remoteFan.RemoteTurnOn();
+fan.getSpeed();
